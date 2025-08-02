@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- School Logo -->
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bbu"
+            android:contentDescription="School Logo"
+            android:layout_marginTop="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Registration"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/imageLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <!-- First & Last Name Row -->
+        <LinearLayout
+            android:id="@+id/nameRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTitle"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editFirstName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:minHeight="48dp"
+                android:layout_marginEnd="8dp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editLastName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:minHeight="48dp"
+                android:layout_marginStart="8dp"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameRow"
+            android:layout_marginTop="16dp"
+            android:hint="Username"
+            android:minHeight="48dp"
+            android:inputType="text" />
+
+        <!-- Phone -->
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editUsername"
+            android:layout_marginTop="16dp"
+            android:hint="Phone"
+            android:minHeight="48dp"
+            android:inputType="phone" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editPhone"
+            android:layout_marginTop="16dp"
+            android:hint="Email"
+            android:minHeight="48dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Note -->
+        <EditText
+            android:id="@+id/editNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editEmail"
+            android:layout_marginTop="16dp"
+            android:hint="Note"
+            android:minHeight="80dp"
+            android:inputType="textMultiLine" />
+
+        <!-- Back to Login Button -->
+        <Button
+            android:id="@+id/btnBackToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Login"
+            android:layout_below="@id/editNote"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#B0BEC5"
+            android:textColor="#000000" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_below="@id/editNote"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</ScrollView>

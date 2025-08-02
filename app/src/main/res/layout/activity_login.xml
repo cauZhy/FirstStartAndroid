@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- School Logo -->
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/bbu"
+            android:contentDescription="School Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Login"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Student ID Label -->
+        <TextView
+            android:id="@+id/textStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student ID"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Student ID Input -->
+        <EditText
+            android:id="@+id/editStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your student ID"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password Label -->
+        <TextView
+            android:id="@+id/textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Remember Me + Forgot Password -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <CheckBox
+                android:id="@+id/checkboxRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me" />
+
+            <TextView
+                android:id="@+id/textForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textColor="#0066CC"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
